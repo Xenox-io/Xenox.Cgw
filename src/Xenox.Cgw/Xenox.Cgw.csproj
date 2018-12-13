@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xenox.Auth.Client.AuthorizationTokenClientProvider" Version="1.0.1" />
+    <PackageReference Include="Xenox.Command" Version="1.0.4" />
+    <PackageReference Include="Xenox.Messaging" Version="1.0.5" />
+    <PackageReference Include="Xenox.Pipeline" Version="1.0.0" />
+    <PackageReference Include="Xenox.Serialization" Version="1.0.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EdjCase.JsonRpc.Router" Version="2.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="Xenox.AspNetCore.WebSockets.HttpJsonRpc" Version="1.0.0" />
+    <PackageReference Include="Xenox.DependencyInjection.Configuration" Version="1.0.0" />
+    <PackageReference Include="Xenox.Messaging" Version="1.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xenox.Cgw.Host.DependencyInjection\Xenox.Cgw.Host.DependencyInjection.csproj" />
+    <ProjectReference Include="..\Xenox.Cgw\Xenox.Cgw.csproj" />
+  </ItemGroup>
+
+</Project>
