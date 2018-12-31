@@ -7,7 +7,7 @@ using EdjCase.JsonRpc.Router.Abstractions;
 using EdjCase.JsonRpc.Router.Defaults;
 using Newtonsoft.Json;
 using Xenox.Cgw.Host.HttpJsonRpc.Dtos;
-using Xenox.Command;
+using Xenox.Command.Serialization;
 
 namespace Xenox.Cgw.Host.HttpJsonRpc.Controllers {
 	[RpcRoute("api/rpc.json")]
@@ -50,7 +50,7 @@ namespace Xenox.Cgw.Host.HttpJsonRpc.Controllers {
 			headers[HeaderNames.AuthorizationToken] = authorizationToken;
 			headers[HeaderNames.CorrelationId] = correlationId;
 			CommandMessage commandMessage = new CommandMessage(
-				new CommandInfo() {
+				new SerializableCommand() {
 					Name = command.Name,
 					Data = command.Data.ToString(Formatting.None)
 				},

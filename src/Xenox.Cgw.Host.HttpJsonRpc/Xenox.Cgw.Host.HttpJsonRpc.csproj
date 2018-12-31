@@ -12,9 +12,7 @@
     <PackageReference Include="EdjCase.JsonRpc.Router" Version="2.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
-    <PackageReference Include="Xenox.AspNetCore.WebSockets.HttpJsonRpc" Version="1.0.0" />
-    <PackageReference Include="Xenox.DependencyInjection.Configuration" Version="1.0.0" />
-    <PackageReference Include="Xenox.Messaging" Version="1.0.5" />
+    <PackageReference Include="Xenox.AspNetCore.WebSockets.HttpJsonRpc" Version="1.0.1" />
   </ItemGroup>
 
   <ItemGroup>

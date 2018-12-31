@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.IO;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Xenox.AspNetCore.WebSockets.HttpJsonRpc;
 using Xenox.Cgw.Host.DependencyInjection;
-using Xenox.DependencyInjection.Configuration;
 
 namespace Xenox.Cgw.Host.HttpJsonRpc {
 	public class Startup {
@@ -15,7 +15,11 @@ namespace Xenox.Cgw.Host.HttpJsonRpc {
 		}
 
 		public void ConfigureServices(IServiceCollection services) {
-			IConfiguration configuration = ConfigurationService.GetConfigurationJson("appsettings.json");
+			IConfiguration configuration = new ConfigurationBuilder()
+				.SetBasePath(Directory.GetCurrentDirectory())
+				.AddJsonFile("appsettings.json")
+				.Build()
+			;
 			services.AddJsonRpcWithWebSocketsSupport(config => {
 				config.ShowServerExceptions = true;
 			});

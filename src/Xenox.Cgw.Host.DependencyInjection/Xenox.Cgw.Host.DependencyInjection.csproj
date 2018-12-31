@@ -5,12 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0" />
     <PackageReference Include="Xenox.Auth.Client.DependencyInjection" Version="1.0.1" />
-    <PackageReference Include="Xenox.DependencyInjection.Configuration" Version="1.0.0" />
-    <PackageReference Include="Xenox.Encryption.DependencyInjection" Version="1.0.0" />
-    <PackageReference Include="Xenox.Encryption.SuperBasicEncryption" Version="1.0.2" />
-    <PackageReference Include="Xenox.Serialization.JsonNet.DependencyInjection" Version="1.0.4" />
+    <PackageReference Include="Xenox.DependencyInjection.Configuration" Version="1.0.2" />
+    <PackageReference Include="Xenox.Encryption.DependencyInjection" Version="1.0.2" />
+    <PackageReference Include="Xenox.Encryption.SuperBasicEncryption" Version="1.0.4" />
+    <PackageReference Include="Xenox.Serialization.JsonNet.DependencyInjection" Version="1.0.6" />
     <PackageReference Include="WindowsAzure.Storage" Version="9.1.1" />
   </ItemGroup>
 
