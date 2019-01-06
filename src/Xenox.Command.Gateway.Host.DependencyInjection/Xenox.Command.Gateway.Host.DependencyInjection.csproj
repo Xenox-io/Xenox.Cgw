@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xenox.Auth.Client.DependencyInjection" Version="1.0.1" />
+    <PackageReference Include="Xenox.DependencyInjection.Configuration" Version="1.0.2" />
+    <PackageReference Include="Xenox.Encryption.DependencyInjection" Version="1.0.2" />
+    <PackageReference Include="Xenox.Encryption.SuperBasicEncryption" Version="1.0.4" />
+    <PackageReference Include="Xenox.Serialization.JsonNet.DependencyInjection" Version="1.0.6" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xenox.Command.Gateway.Dispatching.Azure\Xenox.Command.Gateway.Dispatching.Azure.csproj" />
+    <ProjectReference Include="..\Xenox.Command.Gateway.Pipeline\Xenox.Command.Gateway.Pipeline.csproj" />
+  </ItemGroup>
+
+</Project>
