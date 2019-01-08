@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Gateway.Pipel
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Gateway.Dispatching", "src\Xenox.Command.Gateway.Dispatching\Xenox.Command.Gateway.Dispatching.csproj", "{F5035CD2-B71A-4BA8-B4EB-A8D8AED21910}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenox.Command.Gateway.Client.HttpJsonRpc", "src\Xenox.Command.Gateway.Client.HttpJsonRpc\Xenox.Command.Gateway.Client.HttpJsonRpc.csproj", "{1F027E09-F507-42FF-AF6C-3E8F3D9C5504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xenox.Command.Gateway.Client.HttpJsonRpc", "src\Xenox.Command.Gateway.Client.HttpJsonRpc\Xenox.Command.Gateway.Client.HttpJsonRpc.csproj", "{1F027E09-F507-42FF-AF6C-3E8F3D9C5504}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

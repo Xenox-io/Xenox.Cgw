@@ -2,10 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.6</Version>
   </PropertyGroup>
+
+  <Target Name="CopyNuGetPackage" AfterTargets="Pack">
+    <Exec Command="xcopy /Y &quot;$(TargetDir)..\*.nupkg&quot; &quot;%USERPROFILE%\.nuget.xenox.local&quot;" />
+  </Target>
 
   <ItemGroup>
     <PackageReference Include="Xenox.Command.Gateway" Version="1.0.3" />
+    <PackageReference Include="Xenox.Serialization" Version="1.0.3" />
   </ItemGroup>
 
 </Project>
